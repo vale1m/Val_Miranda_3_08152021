@@ -40,4 +40,16 @@
         font-weight: 100;
         padding-bottom: 30px;
     }
+    &__button {
+        border-radius: 30px;
+        padding: 15px 25px;
+        background: $color-background-gradient-button;
+        border: none;
+        color: $color-white;
+        @include button-shadow;
+    }
+}
+
+.howitworks {
+    padding: 50px 20px 60px 20px;
 }
