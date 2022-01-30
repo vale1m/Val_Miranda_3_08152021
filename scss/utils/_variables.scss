@@ -7,7 +7,22 @@ $color-background-gray: #F6F6F6;
 $color-background-gray-darker: #EAEAEA;
 $color-background-gradient-button: linear-gradient(175deg, $color-secondary, $color-primary);
 $color-shadow: #CACACA;
+$color-icons-main-list: #7E7E7E;
+
+$font-size-purple-index: 0.8em;
+
+$breakpoints: (
+    tablet: 1200px,
+    desktop: 1440px
+);
 
 @mixin button-shadow {
     box-shadow: 0px 5px 5px $color-shadow;
 }
+
+@mixin tablet {
+    @media screen and(min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+    }
+    
