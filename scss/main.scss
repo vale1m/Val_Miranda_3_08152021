@@ -152,9 +152,6 @@ body {
         border-radius: 15px;
         @include button-shadow;
         &__link {
-            &:hover {
-
-            }
             &__imagecont {
                 width: 100%;
                 height: 66%;
