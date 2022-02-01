@@ -42,6 +42,18 @@ h2 {
   padding: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 1050px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+  }
+}
+
 .logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +94,12 @@ h2 {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .location-nav {
+    padding: 30px;
+  }
 }
 
 .explore {
@@ -139,6 +157,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0px 20px;
@@ -222,9 +243,68 @@ h2 {
   width: 8%;
 }
 
+.howitworks__numberandtext__text:hover {
+  background-color: #F5EDFF;
+}
+
+.howitworks__numberandtext__text:hover .icon-list {
+  color: #9356DC;
+}
+
 @media screen and (min-width: 1200px) {
   .howitworks__numberandtext {
-    width: 33%;
+    width: 30%;
   }
+}
+
+.restaurants {
+  padding: 55px 20px;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.restaurants__title {
+  padding-bottom: 0px;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.restaurants__card {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 5px 5px #CACACA;
+          box-shadow: 0px 5px 5px #CACACA;
+}
+
+.restaurants__card__link__imagecont {
+  width: 100%;
+  height: 66%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.restaurants__card__link__imagecont__photo {
+  width: 100%;
+  height: 130%;
+  -o-object-position: 50% 240%;
+     object-position: 50% 240%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

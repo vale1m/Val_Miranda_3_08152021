@@ -2,6 +2,15 @@
 @import "./base/base";
 @import "./base/typography";
 
+body {
+    @include tablet {
+        max-width: 1050px;
+    }
+    @include desktop {
+        max-width: 1440px;
+    }
+}
+
 .logo-container {
     display: flex;
     flex-direction: row;
@@ -21,6 +30,9 @@
         display: flex;
         flex-direction: row;
         gap: 15px;
+    }
+    @include tablet {
+        padding: 30px;
     }
 }
 
@@ -59,6 +71,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0px 20px;
     &__title {
@@ -106,9 +119,55 @@
                 font-size: 1.2em;
                 width: 8%;
             }
+            &:hover {
+                background-color: $color-primary-background;
+                .icon-list {
+                    color: $color-primary;
+                }
+            }
         }
         @include tablet {
-            width: 33%;
+            width: 30%;
+        }
+    }
+}
+
+.restaurants {
+    padding: 55px 20px;
+    background-color: $color-background-gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    &__title {
+        padding-bottom: 0px;
+        width: 100%;
+        align-self: flex-start;
+    }
+    &__card {
+        width: 100%;
+        height: 250px;
+        background-color: $color-white;
+        border-radius: 15px;
+        @include button-shadow;
+        &__link {
+            &:hover {
+
+            }
+            &__imagecont {
+                width: 100%;
+                height: 66%;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                overflow: hidden;
+                &__photo {
+                    width: 100%;
+                    height: 130%;
+                    object-position: 50% 240%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }
