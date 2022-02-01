@@ -147,9 +147,10 @@ body {
     }
     &__card {
         width: 100%;
-        height: 250px;
+        height: 230px;
         background-color: $color-white;
         border-radius: 15px;
+        box-sizing: border-box;
         @include button-shadow;
         &__link {
             &__imagecont {
@@ -160,11 +161,41 @@ body {
                 overflow: hidden;
                 &__photo {
                     width: 100%;
-                    height: 130%;
+                    height: 175px;
                     object-position: 50% 50%;
                     object-fit: cover;
                 }
             }
+            &__textcont {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 75px;
+                align-content: space-between;
+                align-items: flex-start;
+                padding-right: 20px;
+                &__title {
+                    font-size: 0.9em;
+                    padding: 10px 0px 0px 10px;
+                    width: 66%;
+                }
+                &__location {
+                    font-size: 0.9em;
+                    padding: 0px 10px;
+                    font-weight: lighter;
+                }
+                &__icon {
+                    flex-grow: 2;
+                    align-self: center;
+                    font-size: 1.2em;
+                    height: 75px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        @include tablet {
+            width: 40%;
         }
     }
 }
