@@ -47,6 +47,10 @@
         border: none;
         color: $color-white;
         @include button-shadow;
+        &:hover {
+            @include darken-button-shadow;
+            @include lighten-button-background;
+        }
     }
 }
 

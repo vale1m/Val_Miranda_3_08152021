@@ -123,6 +123,12 @@ h2 {
           box-shadow: 0px 5px 5px #CACACA;
 }
 
+.explore__button:hover {
+  -webkit-box-shadow: 0px 5px 5px #979797;
+          box-shadow: 0px 5px 5px #979797;
+  background: linear-gradient(175deg, #ff93e1, #a16be0);
+}
+
 .howitworks {
   padding: 50px 20px 60px 20px;
   width: 100%;
