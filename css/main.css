@@ -352,6 +352,28 @@ h2 {
           align-items: center;
 }
 
+.restaurants__card__link__textcont__icon__heart {
+  position: relative;
+  z-index: 1;
+}
+
+.restaurants__card__link__textcont__icon__heart:hover .restaurants__card__link__textcont__icon__heart--full {
+  opacity: 1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.restaurants__card__link__textcont__icon__heart--full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+  z-index: -1;
+}
+
 @media screen and (min-width: 1200px) {
   .restaurants__card {
     width: 40%;
