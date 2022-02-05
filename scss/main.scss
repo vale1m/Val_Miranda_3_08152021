@@ -189,28 +189,31 @@ body {
                     height: 75px;
                     display: flex;
                     align-items: center;
-                    &__heart {
-                        position: relative;
-                        z-index: 1;
-                        &:hover {
-                            & .restaurants__card__link__textcont__icon__heart--full {
-                                opacity: 1;
-                                transition: opacity 250ms;
-                            }
-                        }
-                        &--full {
-                            position: absolute;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            left: 0;
-                            color: $color-primary;
+                    position: relative;
+                    z-index: 0;
+                    .empty-icon {
+                        position: absolute;
+                        transition: opacity 250ms;
+                    }
+                    &:hover {
+                        .empty-icon {
                             opacity: 0;
-                            z-index: -1;
-                            
                         }
-                    } 
-                }
+                        & .restaurants__card__link__textcont__icon--full {
+                             opacity: 1;
+                        }
+                    }
+                    &--full {
+                        .full-icon {
+                            background: $color-animation-gradient-icon;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                        opacity: 0;
+                        z-index: -1;
+                        transition: opacity 250ms;
+                    }
+                }   
             }
         }
         @include tablet {
