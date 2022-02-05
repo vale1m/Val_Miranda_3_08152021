@@ -6,132 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://kit.fontawesome.com/3e6ac46148.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Discover restaurants and book the menu before going!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img class="logo-container__image" src="img/ohmyfood@2x.svg" alt="ohmyfood logo">
-        </div>
-        <nav class="location-nav">
-            <a href="#" class="location-nav__link">
-                <i class="fas fa-map-marker-alt"></i>
-                <p class="location-nav__link__location">Paris, Balleville</p>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="explore">
-            <h2 class="explore__title">Book the menu you like</h2>
-            <p class="explore__discover-text">Discover top-of-the-art restaurants we picked for you</p>
-            <button class="explore__button">Explore our restaurants</button>
-        </section>
+    <div class="loader">
+        <img src="img/Loading-transp.png" class="loader__image" alt="Page Loading"></img>
+    </div>
+    <div class="page-content">
+        <header>
+            <div class="logo-container">
+                <img class="logo-container__image" src="img/ohmyfood@2x.svg" alt="ohmyfood logo">
+            </div>
+            <nav class="location-nav">
+                <a href="#" class="location-nav__link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="location-nav__link__location">Paris, Balleville</p>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section class="explore">
+                <h2 class="explore__title">Book the menu you like</h2>
+                <p class="explore__discover-text">Discover top-of-the-art restaurants we picked for you</p>
+                <button class="explore__button">Explore our restaurants</button>
+            </section>
 
-        <section class="howitworks">
-            <h2 class="howitworks__title">How it works</h2>
-            <div class="howitworks__numberandtext">
-                <div class="howitworks__numberandtext__number">
-                    <p>1</p>
-                </div>
-                <div class="howitworks__numberandtext__text">
-                    <i class="fas fa-mobile-alt icon-list"></i>
-                    <p>Choose a restaurant</p>
-                </div>
-            </div>
-            <div class="howitworks__numberandtext">
-                <div class="howitworks__numberandtext__number">
-                    <p>2</p>
-                </div>
-                <div class="howitworks__numberandtext__text">
-                    <i class="fas fa-list icon-list"></i>
-                    <p>Create your menu</p>
-                </div>
-            </div>
-            <div class="howitworks__numberandtext">
-                <div class="howitworks__numberandtext__number">
-                    <p>3</p>
-                </div>
-                <div class="howitworks__numberandtext__text">
-                    <i class="fas fa-store icon-list"></i>
-                    <p>Go enjoy it at the restaurant</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="restaurants">
-            <h2 class="restaurants__title">Restaurants</h2>
-            <article class="restaurants__card">
-                <a href="#" class="restaurants__card__link">
-                    <div class="restaurants__card__link__imagecont">
-                        <img src="img/the-full-palette-lite-small.jpg" class="restaurants__card__link__imagecont__photo" alt="The Full Palette Restaurant">
+            <section class="howitworks">
+                <h2 class="howitworks__title">How it works</h2>
+                <div class="howitworks__numberandtext">
+                    <div class="howitworks__numberandtext__number">
+                        <p>1</p>
                     </div>
-                    <div class="restaurants__card__link__textcont">
-                        <h4 class="restaurants__card__link__textcont__title">The Full Palette</h4>
-                        <p class="restaurants__card__link__textcont__location">New York</p>
-                        <div class="restaurants__card__link__textcont__icon">
-                            <i class="far fa-heart empty-icon"></i>
-                            <div class="restaurants__card__link__textcont__icon--full">
-                                <i class="fas fa-heart full-icon"></i>
+                    <div class="howitworks__numberandtext__text">
+                        <i class="fas fa-mobile-alt icon-list"></i>
+                        <p>Choose a restaurant</p>
+                    </div>
+                </div>
+                <div class="howitworks__numberandtext">
+                    <div class="howitworks__numberandtext__number">
+                        <p>2</p>
+                    </div>
+                    <div class="howitworks__numberandtext__text">
+                        <i class="fas fa-list icon-list"></i>
+                        <p>Create your menu</p>
+                    </div>
+                </div>
+                <div class="howitworks__numberandtext">
+                    <div class="howitworks__numberandtext__number">
+                        <p>3</p>
+                    </div>
+                    <div class="howitworks__numberandtext__text">
+                        <i class="fas fa-store icon-list"></i>
+                        <p>Go enjoy it at the restaurant</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="restaurants">
+                <h2 class="restaurants__title">Restaurants</h2>
+                <article class="restaurants__card">
+                    <a href="#" class="restaurants__card__link">
+                        <div class="restaurants__card__link__imagecont">
+                            <img src="img/the-full-palette-lite-small.jpg" class="restaurants__card__link__imagecont__photo" alt="The Full Palette Restaurant">
+                        </div>
+                        <div class="restaurants__card__link__textcont">
+                            <h4 class="restaurants__card__link__textcont__title">The Full Palette</h4>
+                            <p class="restaurants__card__link__textcont__location">New York</p>
+                            <div class="restaurants__card__link__textcont__icon">
+                                <i class="far fa-heart empty-icon"></i>
+                                <div class="restaurants__card__link__textcont__icon--full">
+                                    <i class="fas fa-heart full-icon"></i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="#" class="restaurants__card__link">
-                    <div class="restaurants__card__link__imagecont">
-                        <img src="img/the-enchanted-plate-lite-small.jpg" class="restaurants__card__link__imagecont__photo" alt="The Enchanted Plate Restaurant">
-                    </div>
-                    <div class="restaurants__card__link__textcont">
-                        <h4 class="restaurants__card__link__textcont__title">The Enchanted Plate</h4>
-                        <p class="restaurants__card__link__textcont__location">New York</p>
-                        <div class="restaurants__card__link__textcont__icon">
-                            <i class="far fa-heart empty-icon"></i>
-                            <div class="restaurants__card__link__textcont__icon--full">
-                                <i class="fas fa-heart full-icon"></i>
-                            </div>
-                        </div> 
-                    </div>
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="#" class="restaurants__card__link">
-                    <div class="restaurants__card__link__imagecont">
-                        <img src="img/bastille-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Bastille Restaurant">
-                    </div>
-                    <div class="restaurants__card__link__textcont">
-                        <h4 class="restaurants__card__link__textcont__title">Bastille</h4>
-                        <p class="restaurants__card__link__textcont__location">New York</p>
-                        <div class="restaurants__card__link__textcont__icon">
-                            <i class="far fa-heart empty-icon"></i>
-                            <div class="restaurants__card__link__textcont__icon--full">
-                                <i class="fas fa-heart full-icon"></i>
-                            </div>
-                        </div> 
-                    </div>
-                </a>
-            </article>
-            <article class="restaurants__card">
-                <a href="#" class="restaurants__card__link">
-                    <div class="restaurants__card__link__imagecont">
-                        <img src="img/le-gourmand-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Le Gourmand Restaurant">
-                    </div>
-                    <div class="restaurants__card__link__textcont">
-                        <h4 class="restaurants__card__link__textcont__title">Le Gourmand</h4>
-                        <p class="restaurants__card__link__textcont__location">New York</p>
-                        <div class="restaurants__card__link__textcont__icon">
-                            <i class="far fa-heart empty-icon"></i>
-                            <div class="restaurants__card__link__textcont__icon--full">
-                                <i class="fas fa-heart full-icon"></i>
-                            </div>
-                        </div> 
-                    </div>
-                </a>
-            </article> 
-        </section>
-    </main>
+                    </a>
+                </article>
+                <article class="restaurants__card">
+                    <a href="#" class="restaurants__card__link">
+                        <div class="restaurants__card__link__imagecont">
+                            <img src="img/the-enchanted-plate-lite-small.jpg" class="restaurants__card__link__imagecont__photo" alt="The Enchanted Plate Restaurant">
+                        </div>
+                        <div class="restaurants__card__link__textcont">
+                            <h4 class="restaurants__card__link__textcont__title">The Enchanted Plate</h4>
+                            <p class="restaurants__card__link__textcont__location">New York</p>
+                            <div class="restaurants__card__link__textcont__icon">
+                                <i class="far fa-heart empty-icon"></i>
+                                <div class="restaurants__card__link__textcont__icon--full">
+                                    <i class="fas fa-heart full-icon"></i>
+                                </div>
+                            </div> 
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurants__card">
+                    <a href="#" class="restaurants__card__link">
+                        <div class="restaurants__card__link__imagecont">
+                            <img src="img/bastille-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Bastille Restaurant">
+                        </div>
+                        <div class="restaurants__card__link__textcont">
+                            <h4 class="restaurants__card__link__textcont__title">Bastille</h4>
+                            <p class="restaurants__card__link__textcont__location">New York</p>
+                            <div class="restaurants__card__link__textcont__icon">
+                                <i class="far fa-heart empty-icon"></i>
+                                <div class="restaurants__card__link__textcont__icon--full">
+                                    <i class="fas fa-heart full-icon"></i>
+                                </div>
+                            </div> 
+                        </div>
+                    </a>
+                </article>
+                <article class="restaurants__card">
+                    <a href="#" class="restaurants__card__link">
+                        <div class="restaurants__card__link__imagecont">
+                            <img src="img/le-gourmand-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Le Gourmand Restaurant">
+                        </div>
+                        <div class="restaurants__card__link__textcont">
+                            <h4 class="restaurants__card__link__textcont__title">Le Gourmand</h4>
+                            <p class="restaurants__card__link__textcont__location">New York</p>
+                            <div class="restaurants__card__link__textcont__icon">
+                                <i class="far fa-heart empty-icon"></i>
+                                <div class="restaurants__card__link__textcont__icon--full">
+                                    <i class="fas fa-heart full-icon"></i>
+                                </div>
+                            </div> 
+                        </div>
+                    </a>
+                </article> 
+            </section>
+        </main>
+    </div>
 </body>
 </html>

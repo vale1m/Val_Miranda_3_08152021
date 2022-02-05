@@ -52,4 +52,34 @@ $breakpoints: (
     bottom: 0;
     left: 0;
 }
+
+@keyframes loader-cont {
+    0%{
+       opacity: 1;
+    }
+    100%{
+       opacity: 0;
+       display: none;
+    }
+}
+
+@keyframes loader-img {
+    0%{
+        transform: scale(0.1);
+        opacity: 0.2;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes page-content {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
     
