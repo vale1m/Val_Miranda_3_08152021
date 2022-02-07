@@ -254,3 +254,29 @@ body {
         }
     }
 }
+
+.footer {
+    background-color: $color-background-footer;
+    margin: 0px;
+    padding: 25px;
+    &__title {
+        color: $color-white;
+    }
+    &__links {
+        padding: 25px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 0.8em;
+        &__with-icon {
+            display: flex;
+            gap: 10px;
+            color: $color-white;
+            align-items: baseline;
+        }
+        &__without-icon {
+            color: $color-white;
+        }
+    }
+}
