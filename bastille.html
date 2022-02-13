@@ -24,11 +24,10 @@
             </nav>
         </header>
         <main>
-            <div class="restaurant-photo">
-                <img src="img/bastille-lite.jpg" class="restaurant-photo__image" alt="Bastille Restaurant">
-            </div>
-
-            <section class="rest-menu">
+            <div class="rest-menu">
+                <div class="rest-menu__photo">
+                    <img src="img/bastille-lite.jpg" class="rest-menu__photo__image" alt="Bastille Restaurant">
+                </div>
                 <div class="rest-menu__titlecont">
                     <h1 class="rest-menu__titlecont__title">Bastille</h1>
                     <div class="rest-menu__titlecont__icon">
@@ -39,75 +38,43 @@
                     </div>
                 </div>
 
-                <div class="rest-menu__submenu">
-                    <article class="rest-menu__submenu__card">
-                        <h6>ENTREES</h6>
-                        <a href="#" class="rest-menu__submenu__card__link">
-                            <div class="restaurants__card__link__textcont">
-                                <h4 class="restaurants__card__link__textcont__title">The Full Palette</h4>
-                                <p class="restaurants__card__link__textcont__location">New York</p>
-                                <div class="restaurants__card__link__textcont__icon">
-                                    <i class="far fa-heart empty-icon"></i>
-                                    <div class="restaurants__card__link__textcont__icon--full">
-                                        <i class="fas fa-heart full-icon"></i>
-                                    </div>
+                <section class="rest-menu__submenu">
+                    <h6 class="rest-menu__submenu__title">ENTREES</h6>
+                    <div class="rest-menu__submenu__underline"></div>
+                    <div class="rest-menu__submenu__card-cont">
+                        <a href="#" class="rest-menu__submenu__card-cont__cardlink card1">
+                            <article class="rest-menu__submenu__card-cont__cardlink__card">
+                                <h4 class="rest-menu__submenu__card-cont__cardlink__card__title">Citrus Squid Carpaccio</h4>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__info">with orange zest</p>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__price"><strong>25€</strong></p>
+                                <div class="rest-menu__submenu__card-cont__cardlink__card__icon">
+                                    <i class="fas fa-check-circle check-icon"></i>
                                 </div>
-                            </div>
+                            </article>
                         </a>
-                    </article>
-                </div>
-                <article class="restaurants__card">
-                    <a href="#" class="restaurants__card__link">
-                        <div class="restaurants__card__link__imagecont">
-                            <img src="img/the-enchanted-plate-lite-small.jpg" class="restaurants__card__link__imagecont__photo" alt="The Enchanted Plate Restaurant">
-                        </div>
-                        <div class="restaurants__card__link__textcont">
-                            <h4 class="restaurants__card__link__textcont__title">The Enchanted Plate</h4>
-                            <p class="restaurants__card__link__textcont__location">New York</p>
-                            <div class="restaurants__card__link__textcont__icon">
-                                <i class="far fa-heart empty-icon"></i>
-                                <div class="restaurants__card__link__textcont__icon--full">
-                                    <i class="fas fa-heart full-icon"></i>
+                        <a href="#" class="rest-menu__submenu__card-cont__cardlink card2">
+                            <article class="rest-menu__submenu__card-cont__cardlink__card">
+                                <h4 class="rest-menu__submenu__card-cont__cardlink__card__title">Grandmother's Vegetable Soup</h4>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__info">Carrots, parsnips, Jerusalem artichoke</p>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__price"><strong>35€</strong></p>
+                                <div class="rest-menu__submenu__card-cont__cardlink__card__icon">
+                                    <i class="fas fa-check-circle check-icon"></i>
                                 </div>
-                            </div> 
-                        </div>
-                    </a>
-                </article>
-                <article class="restaurants__card">
-                    <a href="#" class="restaurants__card__link">
-                        <div class="restaurants__card__link__imagecont">
-                            <img src="img/bastille-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Bastille Restaurant">
-                        </div>
-                        <div class="restaurants__card__link__textcont">
-                            <h4 class="restaurants__card__link__textcont__title">Bastille</h4>
-                            <p class="restaurants__card__link__textcont__location">New York</p>
-                            <div class="restaurants__card__link__textcont__icon">
-                                <i class="far fa-heart empty-icon"></i>
-                                <div class="restaurants__card__link__textcont__icon--full">
-                                    <i class="fas fa-heart full-icon"></i>
+                            </article>
+                        </a>
+                        <a href="#" class="rest-menu__submenu__card-cont__cardlink card3">
+                            <article class="rest-menu__submenu__card-cont__cardlink__card">
+                                <h4 class="rest-menu__submenu__card-cont__cardlink__card__title">Onion Soup</h4>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__info">Revisted</p>
+                                <p class="rest-menu__submenu__card-cont__cardlink__card__price"><strong>20€</strong></p>
+                                <div class="rest-menu__submenu__card-cont__cardlink__card__icon">
+                                    <i class="fas fa-check-circle check-icon"></i>
                                 </div>
-                            </div> 
-                        </div>
-                    </a>
-                </article>
-                <article class="restaurants__card">
-                    <a href="#" class="restaurants__card__link">
-                        <div class="restaurants__card__link__imagecont">
-                            <img src="img/le-gourmand-lite.jpg" class="restaurants__card__link__imagecont__photo" alt="Le Gourmand Restaurant">
-                        </div>
-                        <div class="restaurants__card__link__textcont">
-                            <h4 class="restaurants__card__link__textcont__title">Le Gourmand</h4>
-                            <p class="restaurants__card__link__textcont__location">New York</p>
-                            <div class="restaurants__card__link__textcont__icon">
-                                <i class="far fa-heart empty-icon"></i>
-                                <div class="restaurants__card__link__textcont__icon--full">
-                                    <i class="fas fa-heart full-icon"></i>
-                                </div>
-                            </div> 
-                        </div>
-                    </a>
-                </article> 
-            </section>
+                            </article>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </main>
         <footer class="footer">
             <h5 class="footer__title">ohmyfood</h5>
