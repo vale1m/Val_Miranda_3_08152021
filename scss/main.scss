@@ -375,32 +375,39 @@ body {
 }
 
 .rest-menu__submenu__card-cont__cardlink__card {
-    padding-right: 20px;
+    padding-left: 10px;
     background-color: $color-white;
     border-radius: 15px;
     @include button-shadow;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     height: 70px;
     overflow: hidden;
-    position: relative;
-    &__title {
-        padding: 10px 0px 0px 10px;;
+    &__data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
         width: 100%;
-        font-size: 0.95em;
-    }
-    &__info {
-        width: 90%;
-        font-size: 0.9em;
-        font-weight: 100;
-        padding: 0px 0px 10px 10px;
-    }
-    &__price {
-        width: 10%;
-        font-size: 0.9em;
-        transition: transform 250ms ease;
+        &__title {
+            padding-top: 10px;
+            font-size: 0.95em;
+            width: 100%;
+        }
+        &__info {
+            font-size: 0.9em;
+            font-weight: 100;
+            width: 85%;
+        }
+        &__price {
+            padding-right: 20px;
+            width: 10%;
+            font-size: 0.9em;
+            transform: translateX(5px);
+            transition: transform 300ms ease-in;
+        }
     }
     &__icon {
         background-color: $color-tertiary;
@@ -412,27 +419,25 @@ body {
         width: 60px;
         height: 70px;
         transform: translateX(200%);
-        position: absolute;
-        left: 70%;
         transition: transform 250ms ease;
     }
     &:hover {
         padding-right: 0px;
-        .rest-menu__submenu__card-cont__cardlink__card__title {
-            width: calc(100% - 80px);
+        .rest-menu__submenu__card-cont__cardlink__card__data {
+            width: calc(100% - 60px);
         }
-        .rest-menu__submenu__card-cont__cardlink__card__info {
-            width: calc(90% - 60px);
-        }
-        .rest-menu__submenu__card-cont__cardlink__card__price {
-            transform: translateX(-10px);
+        .rest-menu__submenu__card-cont__cardlink__card__data__price {
+            transform: translateX(0);
         }
         .rest-menu__submenu__card-cont__cardlink__card__icon {
-            transform: translateX(60%);
+            transform: translateX(0);
         }
         .check-icon {
             transform: rotate(-360deg);
         }
+    }
+    @include tablet {
+        width: 30%;
     }
 }
 
